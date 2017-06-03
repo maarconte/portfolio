@@ -1,10 +1,12 @@
 import React, { Component, PropTypes } from 'react';
 import {Tabs, Tab} from 'react-bootstrap-tabs';
+import {Button, ButtonGroup} from 'react-bootstrap';
 import BurgerMenu from 'react-burger-menu';
-import About from '../../components/Sidebar/About';
-import CV from '../../components/Sidebar/CV';
-import Skills from '../../components/Sidebar/Skills';
+import About from 'components/Sidebar/About';
+import CV from 'components/Sidebar/CV';
+import Skills from 'components/Sidebar/Skills';
 
+var FontAwesome = require('react-fontawesome');
 var MenuWrap = React.createClass({
 
     getInitialState() {
@@ -87,14 +89,18 @@ export default class LeftSidebar extends React.Component {
                     styles={styles}
                     className={"sidebar"}  
                     pageWrapId={'page-wrap'}
-                    outerContainerId={'outer-container'}
-                >
-                    {console.log(Menu)}
-   <Tabs onSelect={(index, label) => console.log(label + ' selected')}>
-    <Tab label="About"><About/></Tab>
-    <Tab label="CV"></Tab>
-    <Tab label="Skills"></Tab>
-</Tabs>
+                    outerContainerId={'outer-container'}>
+                   
+                <Tabs onSelect={(index, label) => console.log(label + ' selected')}>
+                    <Tab label="About"><About/></Tab>
+                    <Tab label="CV"></Tab>
+                    <Tab label="Skills"></Tab>
+                </Tabs>
+                  <ButtonGroup justified>
+    <Button href="#"><FontAwesome name='twitter'size='2x' /></Button>
+    <Button href="#"><FontAwesome name='twitter'size='2x' /></Button>
+    <Button href="#"><FontAwesome name='twitter'size='2x' /></Button>  
+  </ButtonGroup>
                 </Menu>
             </MenuWrap>
         );

@@ -11,11 +11,11 @@ export default class Home extends Component {
     return (
   <Grid>
     <Row id="outer-container" className="show-grid">
-      <Col  xs={3} md={3}>
+      <Col  xs={1} md={1}>
        <LeftSidebar />
       </Col>
-      <Col id="page-wrap" xs={9} md={9}>
-      <div><h1> Mathilde Arconre</h1>
+      <Col id="page-wrap" xs={11} md={11}>
+      <div><h1> Mathilde Arconte</h1>
         <h2> Développeuse / Graphiste</h2></div>
       </Col>
     </Row>
