@@ -5019,6 +5019,9 @@ body {
 li {
   list-style: none; }
 
+ul {
+  padding: 0; }
+
 .container {
   background-image: url("/static/media/succulent.a6fe3233.png");
   background-repeat: no-repeat;
@@ -5041,6 +5044,14 @@ li {
   height: 100vh;
   width: 50vw !important;
   background-color: white; }
+  .sidebar .nav-tabs.nav-justified {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px; }
+    .sidebar .nav-tabs.nav-justified li a {
+      border-bottom: none;
+      color: #000; }
   .sidebar .listHobbies {
     display: flex;
     flex-wrap: wrap; }
@@ -5060,4 +5071,8 @@ li {
     left: 33.33%;
     border-top: 1px solid #ccc; }
   .btn-group .btn-default {
-    border: none; }
+    border: none;
+    color: #ccc; }
+    .btn-group .btn-default:hover {
+      background-color: inherit;
+      color: #eee; }

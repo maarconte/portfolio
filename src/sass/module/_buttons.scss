@@ -10,5 +10,10 @@
     }
     .btn-default {
         border: none;
+         color: #ccc;
+         &:hover{
+             background-color: inherit;
+             color: #eee;
+         } 
     }
 }

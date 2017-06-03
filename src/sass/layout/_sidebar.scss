@@ -3,9 +3,19 @@
   height: 100vh;
   width: 50vw !important;
   background-color: white;
+  .nav-tabs.nav-justified{
+      padding: 10px;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 20px;
+li a {
+    border-bottom:none;
+    color:#000;
+}
+  }
   .listHobbies {
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     .listItemHobbies {
         width: 33%;
         margin-bottom: 3%;
