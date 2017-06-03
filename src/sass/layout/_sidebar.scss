@@ -1,0 +1,17 @@
+.sidebar {
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  width: 50vw !important;
+  background-color: white;
+  .listHobbies {
+display: flex;
+flex-wrap: wrap;
+    .listItemHobbies {
+        width: 33%;
+        margin-bottom: 3%;
+        img {
+            width: 90%;
+        }
+    }
+  }
+}
