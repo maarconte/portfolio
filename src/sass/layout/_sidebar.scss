@@ -3,6 +3,7 @@
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
   width: $size_sidebar;
   background-color: white;
+  padding-bottom: 90px;
   @include for-size(phone) {
 	$size_sidebar: 100vw;
   }
@@ -39,5 +40,19 @@
   }
   .container {
     width: 100%;
+  }
+
+  // CV
+  .media {
+    border: 1px solid $color-border;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    &:hover {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    }
+    p {
+      margin-bottom: 5px;
+    }
   }
 }
