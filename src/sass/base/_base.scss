@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding:0;
+    color: $color-text;
 }
 li {
     list-style: none;
@@ -8,4 +9,8 @@ li {
 
 ul {
     padding: 0;
+}
+// Override Bootstrap
+.thumbnail {
+    border: none;
 }

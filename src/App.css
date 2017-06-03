@@ -1,11 +1,25 @@
 @charset "UTF-8";
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+body {
+  margin: 0;
+  padding: 0;
+  color: #4D4641; }
+
+li {
+  list-style: none; }
+
+ul {
+  padding: 0; }
+
+.thumbnail {
+  border: none; }
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5012,23 +5026,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-body {
-  margin: 0;
-  padding: 0; }
-
-li {
-  list-style: none; }
-
-ul {
-  padding: 0; }
-
 .container {
-  background-image: url("/static/media/succulent.a6fe3233.png");
-  background-repeat: no-repeat;
-  background-position: 87vw -45px;
-  background-size: 200px;
-  height: 100vh;
-  width: 100vw;
   margin: 0;
   padding: 0; }
 
@@ -5041,35 +5039,37 @@ ul {
 
 .sidebar {
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
-  height: 100vh;
-  width: 50vw !important;
+  width: 50vw;
   background-color: white; }
+  .sidebar header {
+    margin-bottom: 20px; }
   .sidebar .nav-tabs.nav-justified {
     padding: 10px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     margin-bottom: 20px; }
-    .sidebar .nav-tabs.nav-justified li a {
-      border-bottom: none;
-      color: #000; }
-  .sidebar .listHobbies {
-    display: flex;
-    flex-wrap: wrap; }
-    .sidebar .listHobbies .listItemHobbies {
-      width: 33%;
-      margin-bottom: 3%; }
-      .sidebar .listHobbies .listItemHobbies img {
-        width: 90%; }
+    .sidebar .nav-tabs.nav-justified li {
+      border-right: 1px solid #CCCCCC; }
+      .sidebar .nav-tabs.nav-justified li:last-child {
+        border: none; }
+      .sidebar .nav-tabs.nav-justified li a {
+        border-bottom: none;
+        color: #000;
+        cursor: pointer; }
+        .sidebar .nav-tabs.nav-justified li a:hover {
+          background-color: white;
+          border: none; }
+  .sidebar .btn-group {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    background-color: white; }
+  .sidebar .container {
+    width: 100%; }
 
 .btn-group {
   padding: 15px; }
-  .btn-group:before {
-    content: "";
-    width: 33.33%;
-    position: absolute;
-    top: 0;
-    left: 33.33%;
-    border-top: 1px solid #ccc; }
   .btn-group .btn-default {
     border: none;
     color: #ccc; }

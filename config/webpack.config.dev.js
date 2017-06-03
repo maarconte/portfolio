@@ -67,7 +67,8 @@ module.exports = {
   resolve: {
     modulesDirectories: [
       'src',
-      'node_modules'
+      'node_modules',
+      'src/assets'
     ],
     // This allows you to set a fallback for where Webpack should look for modules.
     // We read `NODE_PATH` environment variable in `paths.js` and pass paths here.

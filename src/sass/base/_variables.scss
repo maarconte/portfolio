@@ -1,0 +1,38 @@
+// Colors
+
+$black: #4D4641;
+$grey: #CCCCCC;
+$red-dark:#5A0E1F;
+$red:#9A1D3F;
+//$blue-dark:;
+$blue: #00A99D;
+
+$color-border: $grey;
+$color-border-dark: $black;
+ 
+$color-highlight: $red;
+ 
+$color-link: #000;
+$color-link-hover: $red-dark;
+$color-link-visited: $red;
+ 
+$color-text: $black;
+$color-text-light: $grey;
+
+//$color-background-body: $blue;
+//$color-background-sidebar: $red;
+//$color-background-hr: $grey;
+//$color-background-button: $red-dark;
+
+//$color-text-input: #666;
+//$color-text-input-focus: #111;
+
+//$color-border-button:  $red-dark;
+//$color-border-button-hover:  $red-dark;
+//$color-border-button-focus:  $red-dark;
+//$color-border-input: #ccc;
+//$color-border-abbr: #666;
+
+// Sizes
+
+$size_sidebar: 50vw;

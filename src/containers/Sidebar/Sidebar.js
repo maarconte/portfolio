@@ -63,7 +63,7 @@ export default class LeftSidebar extends React.Component {
             },
             bmCross: {
                 background: '#bdc3c7'
-            },
+            }, 
             bmMenu: {
                 background: '#fff',
                 padding: '2.5em 1.5em 0',
@@ -72,10 +72,6 @@ export default class LeftSidebar extends React.Component {
             },
             bmMorphShape: {
                 fill: '#373a47'
-            },
-            bmItemList: {
-                color: '#b8b7ad',
-                padding: '0.8em'
             },
             bmOverlay: {
                 background: 'rgba(0, 0, 0, 0.3)'
@@ -90,6 +86,9 @@ export default class LeftSidebar extends React.Component {
                     className={"sidebar"}  
                     pageWrapId={'page-wrap'}
                     outerContainerId={'outer-container'}>
+
+                    <header><h1> Mathilde Arconte</h1>
+        <h2> Développeuse / Graphiste</h2></header>
                    
                 <Tabs onSelect={(index, label) => console.log(label + ' selected')}>
                     <Tab label="About"><About/></Tab>
@@ -97,8 +96,8 @@ export default class LeftSidebar extends React.Component {
                     <Tab label="Skills"></Tab>
                 </Tabs>
                   <ButtonGroup justified>
-    <Button href="#"><FontAwesome name='twitter'size='2x' /></Button>
-    <Button href="#"><FontAwesome name='twitter'size='2x' /></Button>
+    <Button href="#"><FontAwesome name='linkedin'size='2x' /></Button>
+    <Button href="#"><FontAwesome name='github'size='2x' /></Button>
     <Button href="#"><FontAwesome name='twitter'size='2x' /></Button>  
   </ButtonGroup>
                 </Menu>

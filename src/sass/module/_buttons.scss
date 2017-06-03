@@ -1,13 +1,5 @@
 .btn-group {
     padding: 15px;
-    &:before {
-        content: "";
-        width: 33.33%;
-        position: absolute;
-        top: 0;
-        left: 33.33%;
-        border-top: 1px solid #ccc;
-    }
     .btn-default {
         border: none;
          color: #ccc;
