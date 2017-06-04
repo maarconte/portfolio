@@ -4,9 +4,9 @@
   width: $size_sidebar;
   background-color: white;
   padding-bottom: 90px;
-  @include for-size(phone) {
-	$size_sidebar: 100vw;
-  }
+ @include for-size(phone) {
+      width: 100vw;
+ }
   header {
     margin-bottom: 20px;
   }
@@ -17,10 +17,18 @@
       margin-bottom: 20px;
       li {
         border-right: 1px solid $color-border;
-        &:last-child {
-          border: none;
-        }
-        a {
+        @include for-size(phone) {
+          border-right: none;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 33.33%;
+            bottom: 0;
+            left: 33.33%;
+            border-top: 1px solid $color-border;
+          }
+      }
+              a {
           border-bottom:none;
           color:#000;
           cursor: pointer;
@@ -29,6 +37,14 @@
           border: none;
         }
         }
+      }
+        li:last-child {
+          border: none;
+          @include for-size(phone) {
+            &:after {
+            border-top: none;
+            }
+          }
       }
   }
   .btn-group {

@@ -5042,6 +5042,9 @@ button.close {
   width: 50vw;
   background-color: white;
   padding-bottom: 90px; }
+  @media (max-width: 669px) {
+    .sidebar {
+      width: 100vw; } }
   .sidebar header {
     margin-bottom: 20px; }
   .sidebar .nav-tabs.nav-justified {
@@ -5051,8 +5054,16 @@ button.close {
     margin-bottom: 20px; }
     .sidebar .nav-tabs.nav-justified li {
       border-right: 1px solid #CCCCCC; }
-      .sidebar .nav-tabs.nav-justified li:last-child {
-        border: none; }
+      @media (max-width: 669px) {
+        .sidebar .nav-tabs.nav-justified li {
+          border-right: none; }
+          .sidebar .nav-tabs.nav-justified li:after {
+            content: "";
+            position: absolute;
+            width: 33.33%;
+            bottom: 0;
+            left: 33.33%;
+            border-top: 1px solid #CCCCCC; } }
       .sidebar .nav-tabs.nav-justified li a {
         border-bottom: none;
         color: #000;
@@ -5060,6 +5071,11 @@ button.close {
         .sidebar .nav-tabs.nav-justified li a:hover {
           background-color: white;
           border: none; }
+    .sidebar .nav-tabs.nav-justified li:last-child {
+      border: none; }
+      @media (max-width: 669px) {
+        .sidebar .nav-tabs.nav-justified li:last-child:after {
+          border-top: none; } }
   .sidebar .btn-group {
     position: absolute;
     bottom: 0;

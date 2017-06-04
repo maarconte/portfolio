@@ -93,7 +93,7 @@ export default class LeftSidebar extends React.Component {
                 <Tabs onSelect={(index, label) => console.log(label + ' selected')}>
                     <Tab label="About"><About/></Tab>
                     <Tab label="CV"><CV/></Tab>
-                    <Tab label="Skills"></Tab>
+                    {/*<Tab label="Skills"></Tab>*/}
                 </Tabs>
                   <ButtonGroup justified>
     <Button href="#"><FontAwesome name='linkedin'size='2x' /></Button>
